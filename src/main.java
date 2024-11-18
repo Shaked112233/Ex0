@@ -1,4 +1,3 @@
-
 /**
  Pseudocode
 prime = num ,i = 2 ,i <= num (sqr) ,check all numbers between i=>num if num divisible i  f, else T.
@@ -51,17 +50,14 @@ public class main {
                 }
 
                 // Print all prime numbers in the range [2, n)
-                System.out.print("Prime numbers in [2, " + n + "): ");
-                boolean first = true; // for "," in output
+               int c = 0;
                 for (int i = 2; i < n; i++) {
                         if (isPrime(i)) {
-                                if (!first) {
-                                        System.out.print(", ");
+                                c++;
                                 }
-                                System.out.print(i);
-                                first = false; // //  for "," in output
                         }
-                }
+                System.out.print(c + " Prime numbers between [2, " + n + "): ");
+
                 System.out.println();
 
                 // factorization of n
@@ -103,3 +99,4 @@ public class main {
                 return true;
         }
 }
+
